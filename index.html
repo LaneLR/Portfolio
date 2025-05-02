@@ -17,9 +17,9 @@
           <aside id="contact-me" class="pointer">Contact me</aside>
         </div>
         <nav id="navbar">
-          <p class="pointer">Experience</p>
-          <p class="pointer">Bio</p>
-          <p class="pointer">Portfolio</p>
+          <p class="pointer"><a href="#exp-transition">Experience</a></p>
+          <p class="pointer"><a href="#section-2">Bio</a></p>
+          <p class="pointer"><a href="#portfolio-transition">Portfolio</a></p>
         </nav>
       </div>
     </header>
@@ -29,14 +29,27 @@
           src="images/logo.png"
           alt="logo"
           id="logo"
-          class="pointer small-logo whitebg"
+          class="pointer small-logo"
         />
         <nav id="mobile-navbar">
-          <p class="pointer small-text">Experience</p>
-          <p class="pointer small-text">Bio</p>
-          <p class="pointer small-text">Portfolio</p>
+          <p class="pointer small-text">
+            <a href="#exp-transition">Experience</a>
+          </p>
+          <p class="pointer small-text"><a href="#section-2">Bio</a></p>
+          <p class="pointer small-text">
+            <a href="#portfolio-transition">Portfolio</a>
+          </p>
         </nav>
       </aside>
+      <!-- <section id="contact-menu">
+        <div class="visible">
+          <button id="exit-contact">X</button>
+          <h3>Send me an email!</h3>
+          <input type="text" placeholder="Message title" />
+          <textarea row="10" placeholder="Additional comments..."></textarea>
+          <button id="submit" type="submit">Send</button>
+        </div>
+      </section> -->
       <section id="section-1">
         <img id="profile-pic" alt="Lane Richardson" src="images/selfie.jpg" />
       </section>
@@ -48,33 +61,44 @@
         />
       </section>
       <section id="section-3">
-        <p class="bio-info">
+        <p class="text-info-w">
           Hey, I'm <span class="mint">Lane Richardson.</span> This is my
           personal website where I share projects I'm working on and what I've
           done.
         </p>
-        <p class="bio-info">
+        <p class="text-info-w">
           I put a lot of love into my projects. If anything catches your eye,
           contact me and we can talk about it over coffee! ☕
         </p>
       </section>
-      <section class="transition-bw"></section>
+      <section id="portfolio-transition" class="transition-bw"></section>
       <section id="section-4">
-        <div class="item"><img src="" /></div>
-        <div class="item"><img src="" /></div>
-        <div class="item"><img src="" /></div>
-        <div class="item"><img src="" /></div>
-        <div class="item"><img src="" /></div>
-        <div class="item"><img src="" /></div>
+        <p class="text-info-b margin-bottom">My Projects</p>
+        <div class="centered">
+          <div class="item"><img src="" /></div>
+          <div class="item"><img src="" /></div>
+          <div class="item"><img src="" /></div>
+          <div class="item"><img src="" /></div>
+          <div class="item"><img src="" /></div>
+          <div class="item"><img src="" /></div>
+          <div class="item"><img src="" /></div>
+          <div class="item"><img src="" /></div>
+          <div class="item"><img src="" /></div>
+        </div>
       </section>
-      <section class="transition-wb"></section>
-      <section id="section-5"></section>
+      <section id="exp-transition" class="transition-wb"></section>
+      <section id="section-5">
+        <p class="text-info-w">Experience</p>
+        <p class="text-info-w-small">Thrive Software Developer Appentice</p>
+        <p class="text-info-w-small">Self-taught Fullstack Developer</p>
+        <p class="text-info-w">Languages & Tech</p>
+        <p class="text-info-w-small min-width-200 max-width-500">
+          JavaScript • HTML • CSS • SQL • Java • Python • React • Flask • VS
+          Code • Windows • Linux • VMware • VirtualBox • Active Directory
+        </p>
+      </section>
       <section class="transition-bw"></section>
       <section id="section-6"></section>
-      <section class="transition-wb"></section>
-      <section id="section-7"></section>
-      <section class="transition-bw"></section>
-      <section id="section-8"></section>
     </main>
     <footer></footer>
   </body>

@@ -1,5 +1,7 @@
-const navbar = document.querySelector('#moving-navbar')
-const logo = document.querySelector('#logo')
+const navbar = document.querySelector('#moving-navbar');
+const logo = document.querySelector('#logo');
+const exitContactMe = document.querySelector('#exit-contact')
+const contactMenu = document.querySelector('#contact-menu')
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
@@ -7,4 +9,12 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('active')
     }
+})
+
+contactMe.addEventListener('click', () => {
+    contactMenu.classList.add('menu-pop')
+})
+
+exitContactMe.addEventListener('click', () => {
+    contactMenu.classList.remove('menu-pop')
 })
