@@ -11,11 +11,11 @@
     <!-- Header and navbar at top of the page -->
     <header>
       <div id="above-header-bar"></div>
-      <div class="contact-wrapper">
-        <aside id="contact-me" class="pointer">Contant Me</aside>
-      </div>
       <div id="navbar-container">
-        <img src="images/logo.png" alt="logo" id="logo" class="pointer" />
+        <div class="contact-wrapper">
+          <img src="images/logo.png" alt="logo" id="logo" class="pointer" />
+          <aside id="contact-me" class="pointer">Contant Me</aside>
+        </div>
         <nav id="navbar">
           <p class="pointer">Experience</p>
           <p class="pointer">Bio</p>
@@ -24,6 +24,19 @@
       </div>
     </header>
     <main>
+      <aside id="moving-navbar">
+        <img
+          src="images/logo.png"
+          alt="logo"
+          id="logo"
+          class="pointer small-logo whitebg"
+        />
+        <nav id="mobile-navbar">
+          <p class="pointer small-text">Experience</p>
+          <p class="pointer small-text">Bio</p>
+          <p class="pointer small-text">Portfolio</p>
+        </nav>
+      </aside>
       <section id="section-1">
         <img id="profile-pic" alt="Lane Richardson" src="images/selfie.jpg" />
       </section>
@@ -35,8 +48,15 @@
         />
       </section>
       <section id="section-3">
-        <p class="bio-info">Hey, I'm <span class="mint">Lane Richardson.</span> This is my personal website where I share projects I'm working on and what I've done.</p>
-        <p class="bio-info">I put a lot of love into my projects. </p>
+        <p class="bio-info">
+          Hey, I'm <span class="mint">Lane Richardson.</span> This is my
+          personal website where I share projects I'm working on and what I've
+          done.
+        </p>
+        <p class="bio-info">
+          I put a lot of love into my projects. If anything catches your eye,
+          contact me and we can talk about it over coffee! ☕
+        </p>
       </section>
       <section id="section-4"></section>
       <section id="section-5"></section>
@@ -47,4 +67,5 @@
     </main>
     <footer></footer>
   </body>
+  <script src="scripts/index.js"></script>
 </html>
