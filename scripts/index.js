@@ -1,6 +1,7 @@
 const navbar = document.querySelector('#moving-navbar');
 const logo = document.querySelector('#logo');
-const contactMeBtn = document.querySelector('#contact-me')
+const contactMeMain = document.querySelector('#contact-main')
+const contactMeMobile = document.querySelector('#contact-mobile')
 const exitContactMe = document.querySelector('#exit-contact')
 const contactMenu = document.querySelector('#contact-menu')
 
@@ -12,7 +13,11 @@ window.addEventListener('scroll', () => {
     }
 })
 
-contactMeBtn.addEventListener('click', () => {
+contactMeMobile.addEventListener('click', () => {
+    contactMenu.classList.add('menu-pop')
+})
+
+contactMeMain.addEventListener('click', () => {
     contactMenu.classList.add('menu-pop')
 })
 
