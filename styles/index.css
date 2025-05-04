@@ -50,8 +50,8 @@ header {
 
 #contact-me {
   display: inline;
-  border: black 5px solid;
-  min-width: 170px;
+  border: black 3px solid;
+  min-width: 160px;
   text-align: center;
   border-radius: 26px;
   font-size: 1.5em;
