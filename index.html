@@ -6,7 +6,9 @@
     <title>Lane Richardson</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">  </head>
   <body>
     <!-- Header and navbar at top of the page -->
     <header>
@@ -14,7 +16,9 @@
       <div id="navbar-container">
         <div class="contact-wrapper">
           <img src="images/logo.png" alt="logo" id="logo" class="pointer" />
-          <aside id="contact-me" class="pointer">Contact me</aside>
+          <div class="contact-me pointer">Contact me</div>
+          <img class="pointer github" src="images/github.png"/>
+          <img class="pointer linkedin" src="images/linkedin.png" />
         </div>
         <nav id="navbar">
           <p class="pointer"><a href="#exp-transition">Experience</a></p>
@@ -24,13 +28,18 @@
       </div>
     </header>
     <main>
-      <aside id="moving-navbar">
-        <img
+      <div id="moving-navbar">
+        <div class="mobile-nav-left">
+         <img
           src="images/logo.png"
           alt="logo"
           id="logo"
           class="pointer small-logo"
         />
+        <div class="contact-me-small">Contact me</div>  
+        </div>
+        <img class="pointer github" src="images/github.png"/>
+          <img class="pointer linkedin" src="images/linkedin.png" />
         <nav id="mobile-navbar">
           <p class="pointer small-text">
             <a href="#exp-transition">Experience</a>
@@ -40,7 +49,7 @@
             <a href="#portfolio-transition">Portfolio</a>
           </p>
         </nav>
-      </aside>
+      </div>
       <section id="contact-menu">
         <div id="contact-row">
           <div class=" contact-bar">
@@ -78,15 +87,14 @@
       <section id="section-4">
         <p class="text-info-b margin-bottom">My Projects</p>
         <div class="grid">
-          <a href="https://github.com/LaneLR/gemini-chatbot" target="_blank"><div class="item pointer">Gemini Chatbot</div></a>
-          <a><div class="item pointer">This is text!</div></a>
-          <a><div class="item pointer">This is text!</div></a>
-          <a><div class="item pointer">This is text!</div></a>
-          <a><div class="item pointer">This is text!</div></a>
-          <a><div class="item pointer">This is text!</div></a>
-          <a><div class="item pointer">This is text!</div></a>
-          <a><div class="item pointer">This is text!</div></a>
-          <a><div class="item pointer">This is text!</div></a>
+          <a href="https://github.com/LaneLR/gemini-chatbot" target="_blank" class="item pointer">Gemini Chatbot</a>
+          <a class="item pointer">This is text!</a>
+          <a class="item pointer">This is text!</a>
+          <a class="item pointer">This is text!</a>
+          <a class="item pointer">This is text!</a>
+          <a class="item pointer">This is text!</a>
+          <a class="item pointer">This is text!</a>
+          <a class="item pointer">This is text!</a>
         </div>
       </section>
       <section id="exp-transition" class="transition-wb"></section>
@@ -103,7 +111,10 @@
       <section class="transition-bw"></section>
       <section id="section-6"></section>
     </main>
-    <footer></footer>
+    <footer>
+      <p id="footer-txt">© 2025 Lane Richardson. All rights reserved</p>
+      <button id="supportbtn" class="pointer">Support my work</button>
+    </footer>
   </body>
   <script src="scripts/index.js"></script>
 </html>
